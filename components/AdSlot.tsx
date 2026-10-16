@@ -1,0 +1,1 @@
+export default function AdSlot({placement}:{placement:'top'|'inline'|'sidebar'}){return <aside aria-label="광고 영역" className="min-h-28 rounded-xl border border-dashed border-slate-300 bg-slate-100/60 p-5 text-center text-xs text-slate-500 flex items-center justify-center">광고 공간 · {placement} (승인 후 광고 코드 연결)</aside>}

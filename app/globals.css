@@ -1,0 +1,1 @@
+@import "tailwindcss"; :root{color-scheme:light} body{background:#f8fafc;color:#0f172a} a{transition:color .15s} a:hover{color:#2563eb} .panel{background:white;border:1px solid #e2e8f0;border-radius:1rem;padding:1.5rem} .prose-copy p{margin:1rem 0;line-height:1.85}

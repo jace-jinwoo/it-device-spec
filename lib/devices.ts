@@ -1,0 +1,8 @@
+export type Device={slug:string;name:string;brand:string;category:'스마트폰'|'노트북';year:number;screen:string;weightG:number;memoryGB:number;storageGB:number;batteryWh:number;chip:string;summary:string;highlights:string[];limitations:string[]};
+// 데모 데이터: 제조사 공식 사양 검증 전까지 실제 구매 판단의 근거로 사용하지 마세요.
+export const devices:Device[]=[
+{slug:'sample-phone-a',name:'샘플폰 A',brand:'데모 브랜드',category:'스마트폰',year:2026,screen:'6.1인치',weightG:175,memoryGB:8,storageGB:256,batteryWh:17,chip:'Demo Chip A',summary:'휴대성과 일상 사용을 가정한 비교용 샘플입니다.',highlights:['가벼운 무게','일상 사용 중심'],limitations:['공식 판매 제품이 아닙니다','성능 측정치가 아닙니다']},
+{slug:'sample-phone-b',name:'샘플폰 B',brand:'데모 브랜드',category:'스마트폰',year:2026,screen:'6.7인치',weightG:210,memoryGB:12,storageGB:512,batteryWh:20,chip:'Demo Chip B',summary:'대화면과 저장공간을 가정한 비교용 샘플입니다.',highlights:['넓은 화면','넉넉한 저장공간'],limitations:['공식 판매 제품이 아닙니다','배터리 사용시간은 별도 검증 필요']},
+{slug:'sample-laptop-a',name:'샘플북 Air',brand:'데모 브랜드',category:'노트북',year:2026,screen:'13.3인치',weightG:1180,memoryGB:16,storageGB:512,batteryWh:55,chip:'Demo CPU U',summary:'휴대용 노트북 선택 기준을 보여주는 샘플입니다.',highlights:['휴대성 중심','일반 사무용 구성'],limitations:['공식 판매 제품이 아닙니다','벤치마크 자료가 없습니다']},
+{slug:'sample-laptop-b',name:'샘플북 Pro',brand:'데모 브랜드',category:'노트북',year:2026,screen:'16인치',weightG:1950,memoryGB:32,storageGB:1024,batteryWh:80,chip:'Demo CPU H',summary:'대화면과 메모리 용량을 가정한 샘플입니다.',highlights:['넓은 작업 공간','대용량 메모리'],limitations:['공식 판매 제품이 아닙니다','실사용 성능을 의미하지 않습니다']}
+]; export const getDevice=(slug:string)=>devices.find(d=>d.slug===slug);

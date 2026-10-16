@@ -1,0 +1,1 @@
+export const siteName='스펙나침반'; export const siteUrl=(process.env.NEXT_PUBLIC_SITE_URL||'https://example.com').replace(/\/$/,''); export const contactEmail=process.env.NEXT_PUBLIC_CONTACT_EMAIL||'hello@example.com';
